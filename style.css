@@ -1,0 +1,90 @@
+/* Configuración general y fondo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0c1b, #15102a);
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Título Principal */
+h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #00d2ff, #9b51e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Contenedor y Tabla */
+table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  background-color: #1a1636;
+  border-radius: 12px;
+  overflow: hidden; /* Para que los bordes redondeados funcionen */
+  box-shadow: 0 8px 32px 0 rgba(155, 81, 224, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Encabezados (Th) */
+thead {
+  background: linear-gradient(90deg, #0052d4, #65c7f7, #9b51e0);
+  background-size: 200% auto;
+}
+
+th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Celdas del cuerpo (Td) */
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+/* Filas alternas para mejor lectura */
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Efecto Hover (pasar el mouse por encima) */
+tbody tr:hover {
+  background-color: rgba(155, 81, 224, 0.15);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Estilo para las celdas especiales (ID y Correo) */
+td:first-child {
+  color: #00d2ff; /* Resalta el ID en azul brillante */
+  font-weight: bold;
+}
+
+td:nth-child(3) {
+  color: #c084fc; /* Resalta el correo en morado claro */
+}
+
+/* Animación de carga o error */
+td[colspan="4"] {
+  text-align: center;
+  padding: 30px;
+  font-style: italic;
+  color: #94a3b8;
+}
